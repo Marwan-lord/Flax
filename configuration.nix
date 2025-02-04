@@ -70,6 +70,7 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       binutils
+      pfetch-rs
     ];
   };
 
