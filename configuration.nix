@@ -204,6 +204,7 @@
     sdl3
     pkgsi686Linux.gperftools
     tmux
+    bat
   ];
 
   fonts.packages = [
