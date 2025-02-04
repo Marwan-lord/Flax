@@ -68,7 +68,9 @@
     isNormalUser = true;
     description = "marwan";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [];
+    packages = with pkgs; [
+      binutils
+    ];
   };
 
   xdg = {
