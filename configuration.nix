@@ -205,6 +205,7 @@
     pkgsi686Linux.gperftools
     tmux
     bat
+    swayimg
   ];
 
   fonts.packages = [
