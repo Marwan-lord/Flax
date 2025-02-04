@@ -203,6 +203,7 @@
     tlrc
     sdl3
     pkgsi686Linux.gperftools
+    tmux
   ];
 
   fonts.packages = [
