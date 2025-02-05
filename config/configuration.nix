@@ -71,6 +71,7 @@
       pfetch-rs
       kakoune
     ];
+    shell = pkgs.nushell;
   };
 
   xdg = {

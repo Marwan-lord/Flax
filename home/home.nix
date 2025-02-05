@@ -76,17 +76,55 @@
   #
   #  /etc/profiles/per-user/marwan/etc/profile.d/hm-session-vars.sh
   #
+  #
+  # programs.bash.enable = true;
+  #
+  # programs.bash.initExtra = ''
+  #   [[ -f ~/.profile ]] && . ~/.profile
+  #   '';
+  # home.sessionVariables = {
+  #   EDITOR = "vim";
+  #   MANPAGER="vim -M +MANPAGER - ";
+  #   BAT_THEME="Nord";
+  # };
 
-  programs.bash.enable = true;
+  programs = {
+    nushell.enable = true;
+    nushell.extraConfig = ''
+       let carapace_completer = {|spans|
+         carapace $spans.0 nushell $spans | from json
+       }
+       $env.config = {
+        show_banner: false,
+        completions: {
+        case_sensitive: false # case-sensitive completions
+        quick: true    # set to false to prevent auto-selecting completions
+        partial: true    # set to false to prevent partial filling of the prompt
+        algorithm: "fuzzy"    # prefix or fuzzy
+        external: {
+        # set to false to prevent nushell looking into $env.PATH to find more suggestions
+            enable: true
+        # set to lower can improve completion performance at the cost of omitting some options
+            max_results: 100
+            completer: $carapace_completer # check 'carapace_completer'
+          }
+        }
+       }
 
-  programs.bash.initExtra = ''
-    [[ -f ~/.profile ]] && . ~/.profile
-    '';
+       $env.config.buffer_editor = "vim"
+       $env.PATH = ($env.PATH |
+       split row (char esep) |
+       prepend /home/myuser/.apps |
+       append /usr/bin/env
+       )
+      '';
 
-  home.sessionVariables = {
-    EDITOR = "vim";
-    MANPAGER="vim -M +MANPAGER - ";
-    BAT_THEME="Nord";
+      nushell.shellAliases = {
+        vim = "vi";
+      };
+
+      carapace.enable = true;
+      carapace.enableNushellIntegration = true;
   };
 
   # Let Home Manager install and manage itself.
