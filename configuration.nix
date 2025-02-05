@@ -11,9 +11,7 @@
   ];
 
   programs.nix-ld.enable = true;
-  programs.nix-ld.libraries = with pkgs; [
-
-  ];
+  programs.nix-ld.libraries = with pkgs; [];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -208,6 +206,7 @@
     tmux
     bat
     swayimg
+    home-manager
   ];
 
   fonts.packages = [
