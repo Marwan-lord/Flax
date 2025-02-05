@@ -28,6 +28,7 @@
     pkgs.hello
     pkgs.termite
     pkgs.wofi
+    pkgs.dolphin-emu
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # # It is sometimes useful to fine-tune packages, for example, by applying
