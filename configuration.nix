@@ -69,6 +69,7 @@
     packages = with pkgs; [
       binutils
       pfetch-rs
+      kakoune
     ];
   };
 
