@@ -25,6 +25,7 @@
   # environment.
   home.packages = [
     pkgs.hello
+    pkgs.termite
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # # It is sometimes useful to fine-tune packages, for example, by applying
@@ -74,7 +75,7 @@
   #
 
   home.sessionVariables = {
-    EDITOR = "nano";
+    EDITOR = "vim";
   };
 
   # Let Home Manager install and manage itself.
