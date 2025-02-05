@@ -14,6 +14,7 @@
   # want to update the value, then make sure to first check the Home Manager
   # release notes.
   home.stateVersion = "24.11"; # Please read the comment before changing.
+
   programs.btop = {
     settings = {
       color_theme = "nord";
@@ -84,6 +85,7 @@
   home.sessionVariables = {
     EDITOR = "vim";
     MANPAGER="vim -M +MANPAGER - ";
+    BAT_THEME="Nord";
   };
 
   # Let Home Manager install and manage itself.
