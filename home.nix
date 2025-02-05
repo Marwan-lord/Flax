@@ -76,7 +76,7 @@
   #  /etc/profiles/per-user/marwan/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    EDITOR = "vim";
+    EDITOR = "nano";
   };
 
   # Let Home Manager install and manage itself.
