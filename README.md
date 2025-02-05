@@ -1,4 +1,4 @@
-# 🌾 Flax Nix Flake
+# 💠  Flax Nix Flake
 Marwan's NixOS flake
 
 ## License
