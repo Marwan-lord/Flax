@@ -226,6 +226,7 @@
     XDG_SESSION_DESKTOP = "Hyprland";
     GTK_USE_PORTAL = "1";
     NIXOS_XDG_OPEN_USE_PORTAL = "1";
+    EDITOR="vim";
   }; 
 
   # Some programs need SUID wrappers, can be configured further or are

@@ -75,8 +75,15 @@
   #  /etc/profiles/per-user/marwan/etc/profile.d/hm-session-vars.sh
   #
 
+  programs.bash.enable = true;
+
+  programs.bash.initExtra = ''
+    [[ -f ~/.profile ]] && . ~/.profile
+    '';
+
   home.sessionVariables = {
     EDITOR = "vim";
+    MANPAGER="vim -M +MANPAGER - ";
   };
 
   # Let Home Manager install and manage itself.
