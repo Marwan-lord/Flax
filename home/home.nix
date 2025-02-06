@@ -10,20 +10,6 @@
 
   home.stateVersion = "24.11"; 
 
-  programs.btop = {
-    settings = {
-      color_theme = "nord";
-      vim_keys = true;
-    };
-  };
-
-  home.packages = with pkgs; [
-    hello
-    dolphin-emu
-    clang
-    clang-tools
-  ];
-
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
    home.file = {
