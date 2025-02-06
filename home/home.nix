@@ -44,8 +44,7 @@
   #   BAT_THEME="Nord";
   # };
 
-
-
+  # Shell configuration
   programs = {
     nushell.enable = true;
     nushell.extraConfig = ''
@@ -79,21 +78,20 @@
        append /usr/bin/env
        )
     '';
-
       nushell.shellAliases = {
         vim = "vi";
         la = "la --all";
 
       };
-
       carapace.enable = true;
       carapace.enableNushellIntegration = true;
       starship.enable = true;
 
       starship.settings = {
         character = {
-          success_symbol = " (blue)";
+          success_symbol = " ";
         };
+
         git_status = {
           conflicted = "👿 $count ";
           ahead = "⇡ $count ";
