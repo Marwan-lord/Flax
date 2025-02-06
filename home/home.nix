@@ -70,8 +70,9 @@
        }
 
        $env.config.buffer_editor = "vim"
+       $env.config.edit_mode = 'vi'
        $env.MANPAGER = "bat --plain"
-
+       $env.BAT_THEME = "Nord"
        $env.PATH = ($env.PATH |
        split row (char esep) |
        prepend /home/myuser/.apps |
