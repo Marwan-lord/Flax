@@ -1,19 +1,10 @@
 { inputs, lib, config, pkgs, ... }:
 
 {
-  # Home Manager needs a bit of information about you and the paths it should
-  # manage.
   home.username = "marwan";
   home.homeDirectory = "/home/marwan";
 
-  # This value determines the Home Manager release that your configuration is
-  # compatible with. This helps avoid breakage when a new Home Manager release
-  # introduces backwards incompatible changes.
-  #
-  # You should not change this value, even if you update Home Manager. If you do
-  # want to update the value, then make sure to first check the Home Manager
-  # release notes.
-  home.stateVersion = "24.11"; # Please read the comment before changing.
+  home.stateVersion = "24.11"; 
 
   programs.btop = {
     settings = {
@@ -22,8 +13,6 @@
     };
   };
 
-  # The home.packages option allows you to install Nix packages into your
-  # environment.
   home.packages = with pkgs; [
     hello
     dolphin-emu
@@ -54,6 +43,8 @@
   #   MANPAGER="vim -M +MANPAGER - ";
   #   BAT_THEME="Nord";
   # };
+
+
 
   programs = {
     nushell.enable = true;
@@ -98,21 +89,37 @@
       carapace.enable = true;
       carapace.enableNushellIntegration = true;
       starship.enable = true;
-      starship.settings = {
-          git_status = {
-            conflicted = "👿 $count ";
-            ahead = "⇡ $count ";
-            behind = "⇣ $count ";
-            untracked = "🤷 $count ";
-            stashed = "‍📦 $count ";
-            modified = "פֿ $count ";
-            staged = "[ $count ]";
-            renamed = " $count ";
-            deleted = "🗑 $count ";
-          };
-      };
-  };
 
+      starship.settings = {
+        format = ''
+          $character\
+          $username\
+          $hostname\
+          $directory\
+          $git_branch\
+          $git_commit\
+          $git_state\
+          $git_metrics\
+          $git_status\
+          $hg_branch\
+        '';
+
+        character = {
+          success_symbol = "";
+        };
+        git_status = {
+          conflicted = "👿 $count ";
+          ahead = "⇡ $count ";
+          behind = "⇣ $count ";
+          untracked = "🤷 $count ";
+          stashed = "📦 $count ";
+          modified = "פֿ $count ";
+          staged = "[ $count ]";
+          renamed = " $count ";
+          deleted = "🗑 $count ";
+        };
+      };
+    };
 
   programs.home-manager.enable = true;
 }
