@@ -3,6 +3,7 @@
 {
   imports = [
     ./shell.nix
+    ./pkgs.nix
   ];
   home.username = "marwan";
   home.homeDirectory = "/home/marwan";
