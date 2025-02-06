@@ -92,7 +92,12 @@
 
       starship.settings = {
         character = {
-          success_symbol = " ";
+          success_symbol = "[ ](blue)";
+          error_symbol = "[ ](bright red)";
+        };
+
+        git_branch = {
+          symbol = "";
         };
 
         git_status = {
