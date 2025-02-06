@@ -91,21 +91,8 @@
       starship.enable = true;
 
       starship.settings = {
-        format = ''
-          $character\
-          $username\
-          $hostname\
-          $directory\
-          $git_branch\
-          $git_commit\
-          $git_state\
-          $git_metrics\
-          $git_status\
-          $hg_branch\
-        '';
-
         character = {
-          success_symbol = "";
+          success_symbol = " (blue)";
         };
         git_status = {
           conflicted = "👿 $count ";
