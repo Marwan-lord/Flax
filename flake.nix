@@ -11,7 +11,8 @@
 
   outputs = { self, nixpkgs, home-manager, ... } @ inputs :
   let inherit (self) outputs;
-  in {
+  in
+  {
     nixpkgs.config.allowUnfree = true;
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs outputs; };
