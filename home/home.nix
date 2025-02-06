@@ -97,6 +97,20 @@
 
       carapace.enable = true;
       carapace.enableNushellIntegration = true;
+      starship.enable = true;
+      starship.settings = {
+          git_status = {
+            conflicted = "👿 $count ";
+            ahead = "⇡ $count ";
+            behind = "⇣ $count ";
+            untracked = "🤷 $count ";
+            stashed = "‍📦 $count ";
+            modified = "פֿ $count ";
+            staged = "[ $count ]";
+            renamed = " $count ";
+            deleted = "🗑 $count ";
+          };
+      };
   };
 
 
