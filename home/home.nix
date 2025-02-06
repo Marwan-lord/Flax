@@ -16,6 +16,8 @@
   home.packages = with pkgs; [
     hello
     dolphin-emu
+    clang
+    clang-tools
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
