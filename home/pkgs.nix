@@ -5,6 +5,7 @@
     hello
     dolphin-emu
     clang
+    qemu
     clang-tools
   ];
 }
