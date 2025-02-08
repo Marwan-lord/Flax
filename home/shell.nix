@@ -23,7 +23,8 @@
           }
         }
        }
-
+  
+       $env.config.table.mode = 'psql'
        $env.config.buffer_editor = "vim"
        $env.config.edit_mode = 'vi'
        $env.MANPAGER = "bat --plain"
@@ -36,7 +37,7 @@
     '';
       nushell.shellAliases = {
         vim = "vi";
-        la = "la --all";
+        la = "ls --all";
 
       };
       carapace.enable = true;

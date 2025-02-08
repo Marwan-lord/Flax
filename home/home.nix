@@ -35,5 +35,6 @@
   #   MANPAGER="vim -M +MANPAGER - ";
   #   BAT_THEME="Nord";
   # };
+
   programs.home-manager.enable = true;
 }
