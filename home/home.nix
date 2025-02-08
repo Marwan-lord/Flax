@@ -5,6 +5,7 @@
     ./shell.nix
     ./hypr.nix
     ./pkgs.nix
+    ./foot.nix
   ];
   home.username = "marwan";
   home.homeDirectory = "/home/marwan";
