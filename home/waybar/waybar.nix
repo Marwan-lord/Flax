@@ -23,7 +23,7 @@
         "pulseaudio"
         "clock"
         "battery"
-      ]
+      ];
 
       "hyprland/workspaces" = {
         disable-scroll = true;
@@ -32,10 +32,10 @@
         on-click = "activate";
         format = "{icon}";
         persistent-workspaces = {
-          1 = [];
-          2 = [];
-          3 = [];
-          4 = [];
+          "1" = [];
+          "2" = [];
+          "3" = [];
+          "4" = [];
         };
         format-icons =  {
           empty =  " ";
@@ -57,14 +57,15 @@
           critical = 15;
         };
 
-        format =            "{capacity}% {icon}"
+        format =            "{capacity}% {icon}";
         format-full =       "{icon} {capacity}% ";
         format-charging =   "{capacity}%";
         format-plugged =    " {capacity}%";
         format-alt =        "{time} {icon}";
-        format-icons  = ["" "" "" ""  ""]
+        format-icons  = ["" "" "" ""  ""];
 
       };
+
       "clock" =  {
         interval =  1;
         format  = "{:%I:%M %p}";
@@ -73,7 +74,7 @@
           mode = "year";
           mode-mon-col = 3;
           weeks-pos = "right";
-          on-scroll =  1
+          on-scroll =  1;
           format  = {
             months =  "<span color='#ffead3'><b>{}</b></span>";
             days = "<span color='#ecc6d9'><b>{}</b></span>";
@@ -85,13 +86,12 @@
       };
 
       "pulseaudio" =  {
-        // "scroll-step": 1, // %, can be a float
         format = "{icon} {volume}%";
         format-muted = "Muted";
         format-source = "{volume}%";
         format-source-muted =  "";
         format-icons =  {
-          default =  ["󰕿", "󰖀", "󰕾"];
+          default =  ["󰕿" "󰖀" "󰕾"];
         };
         on-click-right = "pavucontrol";
       };
@@ -102,13 +102,13 @@
         menu = "on-click";
         menu-file = "$HOME/.config/waybar/power_menu.xml";
         menu-actions = { 
-          shutdown = "poweroff",
-          reboot = "reboot",
-          suspend = "systemctl suspend",
-          hibernate =  "systemctl hibernate",
+          shutdown = "poweroff";
+          reboot = "reboot";
+          suspend = "systemctl suspend";
+          hibernate =  "systemctl hibernate";
         };
       };
     };
   };
-  programs.waybar.style = ./style.css
+  programs.waybar.style = ./style.css;
 }
