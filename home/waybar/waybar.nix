@@ -27,6 +27,7 @@
 
       "hyprland/workspaces" = {
         disable-scroll = true;
+        active-only = false;
         all-outputs = true;
         wrap-on-scroll = false;
         on-click = "activate";
