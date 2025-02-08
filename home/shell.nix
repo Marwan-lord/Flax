@@ -61,9 +61,9 @@
           untracked = "🤷 $count ";
           stashed = "📦 $count ";
           modified = "פֿ $count ";
-          staged = "[ $count ]";
-          renamed = " $count ";
-          deleted = "🗑 $count ";
+          staged = " $count" ;
+          renamed = "  $count ";
+          deleted = "🗑  $count ";
         };
       };
     };

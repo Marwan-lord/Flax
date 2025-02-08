@@ -3,6 +3,7 @@
 {
   imports = [
     ./shell.nix
+    ./hypr.nix
     ./pkgs.nix
   ];
   home.username = "marwan";
