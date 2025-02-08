@@ -33,6 +33,10 @@
       allow_tearing = false;
       layout = "dwindle";
     };
+    misc = {
+      force_default_wallpaper = 0;
+      disable_hyprland_logo = true;
+    };
 
     decoration = {
       rounding = 10;
