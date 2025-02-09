@@ -74,6 +74,7 @@
     shell = pkgs.nushell;
   };
 
+  xdg.portal.enable = true;
   xdg = {
     autostart.enable = true;
     portal = {
@@ -103,6 +104,7 @@
       enable = true;
     };
   };
+
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true; # if not already enabled
@@ -144,7 +146,6 @@
     xdg-desktop-portal-hyprland
     hyprpaper
     rofi-wayland
-    firefox-wayland
     swww
     grim
     xdg-utils
@@ -173,8 +174,6 @@
     playerctl
     yazi
     hyprlock
-    spotify
-    brave
     chromium
     zathura
     zellij

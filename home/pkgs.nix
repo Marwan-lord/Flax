@@ -7,6 +7,12 @@
     clang
     qemu
     clang-tools
+    xdg-desktop-portal-gtk
+    xdg-desktop-portal
+    xdg-desktop-portal-hyprland
+    bacon
+    kakoune-lsp
+    kitty
   ];
 }
 

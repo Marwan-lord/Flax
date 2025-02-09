@@ -38,7 +38,6 @@
       nushell.shellAliases = {
         vim = "vi";
         la = "ls --all";
-
       };
       carapace.enable = true;
       carapace.enableNushellIntegration = true;
