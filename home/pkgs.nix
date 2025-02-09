@@ -13,6 +13,9 @@
     bacon
     kakoune-lsp
     kitty
+    lua 
+    python3
+    luajit
   ];
 }
 
