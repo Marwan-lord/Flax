@@ -15,7 +15,6 @@
     kitty
     lua 
     python3
-    luajit
   ];
 }
 
