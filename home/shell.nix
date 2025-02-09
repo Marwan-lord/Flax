@@ -38,7 +38,7 @@
       nushell.shellAliases = {
         vim = "vi";
         la = "ls --all";
-        lsgen = "nix profile history --profile /nix/var/nix/profiles/system/";
+        lsgen = "nix profile history --profile /nix/var/nix/profiles/system";
       };
       carapace.enable = true;
       carapace.enableNushellIntegration = true;
