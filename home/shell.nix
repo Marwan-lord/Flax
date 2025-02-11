@@ -36,7 +36,7 @@
        )
     '';
       nushell.shellAliases = {
-        vim = "vi";
+        vim = "nvim";
         la = "ls --all";
         lsgen = "nix profile history --profile /nix/var/nix/profiles/system";
         delold = "sudo nix profile wipe-history --profile /nix/var/nix/profiles/system --older-than 14d";
