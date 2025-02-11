@@ -69,7 +69,6 @@
     packages = with pkgs; [
       binutils
       pfetch-rs
-      kakoune
     ];
     shell = pkgs.nushell;
   };

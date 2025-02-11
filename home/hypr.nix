@@ -93,6 +93,7 @@
 
     bind = [
       "SUPER, Return, exec, foot"
+      "SUPER, R, exec, zathura"
       "SUPER, Q, killactive"
       "SUPER, E, exec, pcmanfm"
       "SUPER, V, togglefloating"

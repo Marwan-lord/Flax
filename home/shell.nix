@@ -25,7 +25,7 @@
        }
   
        $env.config.table.mode = 'psql'
-       $env.config.buffer_editor = "vim"
+       $env.config.buffer_editor = "nvim"
        $env.config.edit_mode = 'vi'
        $env.MANPAGER = "bat --plain"
        $env.BAT_THEME = "Nord"
