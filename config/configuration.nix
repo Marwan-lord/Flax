@@ -208,6 +208,8 @@
 
   fonts.packages = [
     pkgs.nerd-fonts.zed-mono
+    pkgs.nerd-fonts.blex-mono
+    pkgs.nerd-fonts.martian-mono
   ];
 
   environment.sessionVariables = {

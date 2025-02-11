@@ -3,7 +3,7 @@
   programs.foot.enable = true;
   programs.foot.settings = {
     main = {
-      font = "ZedMono NF:size=13";
+      font = "BlexMono Nerd Font:size=12";
       shell = "nu";
     };
     bell = {
