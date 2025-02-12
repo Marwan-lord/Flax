@@ -210,6 +210,8 @@
     pkgs.nerd-fonts.zed-mono
     pkgs.nerd-fonts.blex-mono
     pkgs.nerd-fonts.martian-mono
+    pkgs.nerd-fonts.lilex
+    pkgs.nerd-fonts.monaspace
   ];
 
   environment.sessionVariables = {
