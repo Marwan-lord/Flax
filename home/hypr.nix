@@ -10,7 +10,7 @@
       force_zero_scaling = true;
     };
     monitor = [", preferred, auto, auto"];
-    exec-once = ["foot" "swww init &" "swww img ~/Pictures/wallpapers/ign_robots.png" "nm-applet --indicator &"];
+    exec-once = ["foot"  "swww init &" "swww img ~/Pictures/wallpapers/ign_robots.png" "nm-applet --indicator &"];
     bindel = [
         ", XF86AudioRaiseVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
         ", XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"

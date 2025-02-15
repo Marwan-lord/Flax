@@ -7,6 +7,7 @@
     ./pkgs.nix
     ./foot.nix
     ./waybar/waybar.nix
+    ./git.nix
   ];
   home.username = "marwan";
   home.homeDirectory = "/home/marwan";

@@ -73,10 +73,10 @@
     shell = pkgs.nushell;
   };
 
-  xdg.portal.enable = true;
   xdg = {
     autostart.enable = true;
     portal = {
+	enable = true;
       extraPortals = [
         pkgs.xdg-desktop-portal
         pkgs.xdg-desktop-portal-gtk
@@ -204,6 +204,7 @@
     bat
     swayimg
     home-manager
+    kitty
   ];
 
   fonts.packages = [
