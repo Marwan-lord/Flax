@@ -18,6 +18,8 @@
     man-pages
     man-pages-posix
     yt-dlp
+    nwg-look
+    hyprcursor
   ];
 }
 
