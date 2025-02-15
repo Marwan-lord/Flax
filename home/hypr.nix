@@ -9,8 +9,9 @@
     xwayland = {
       force_zero_scaling = true;
     };
+    env = [ "HYPRCURSOR_THEME," "Nordic-cursors"];
     monitor = [", preferred, auto, auto"];
-    exec-once = ["foot"  "swww init &" "swww img ~/Pictures/wallpapers/ign_robots.png" "nm-applet --indicator &"];
+    exec-once = ["hyprctl setcursor Nordic-cursors 24" "foot"  "swww init &" "swww img ~/Pictures/wallpapers/ign_robots.png" "nm-applet --indicator &"];
     bindel = [
         ", XF86AudioRaiseVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
         ", XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
