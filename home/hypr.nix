@@ -94,6 +94,7 @@
 
     bind = [
       "SUPER, Return, exec, foot"
+      "SUPER, N, exec, hyprlock"
       "SUPER, R, exec, zathura"
       "SUPER, Q, killactive"
       "SUPER, E, exec, pcmanfm"
