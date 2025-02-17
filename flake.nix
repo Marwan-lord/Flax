@@ -14,7 +14,7 @@
   in
   {
     nixpkgs.config.allowUnfree = true;
-    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.flaxOS = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs outputs; };
       modules = [
         ./config/configuration.nix

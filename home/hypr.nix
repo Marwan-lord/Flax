@@ -102,7 +102,7 @@
       "SUPER, P, exec, rofi -show drun"
       "SUPER, I, togglesplit"
       "SUPER, F, fullscreen"
-      "SUPER, W, exec, chromium"
+      "SUPER, W, exec, chromium-browser"
       "SUPER Shift, G, exec, grim"
 
       "SUPER, h, movefocus, l"

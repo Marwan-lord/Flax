@@ -173,7 +173,6 @@
     playerctl
     yazi
     hyprlock
-    chromium
     zathura
     zellij
     gopls

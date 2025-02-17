@@ -20,6 +20,8 @@
     yt-dlp
     nwg-look
     hyprcursor
+    upower
+    ungoogled-chromium
   ];
 }
 
