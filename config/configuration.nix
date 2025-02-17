@@ -84,9 +84,19 @@
     };
   };
 
-  services.xserver.displayManager.gdm = {
-    enable = true;
-    wayland = true;
+  # services.xserver.displayManager.gdm = {
+  #   enable = true;
+  #   wayland = true;
+  # };
+
+  services.greetd = {
+      enable = true;
+      settings = {
+          default_session = {
+              command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd Hyprland";
+              user = "marwan";
+          };
+      };
   };
 
   services.dbus.enable = true;
