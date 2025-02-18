@@ -7,7 +7,7 @@
       layer = "top";
       position = "top";
       height = 32;
-      width = 1280;
+      #width = 1280;
 
       modules-left = [
         "custom/menu"

@@ -80,6 +80,7 @@
       extraPortals = [
         pkgs.xdg-desktop-portal
         pkgs.xdg-desktop-portal-gtk
+        pkgs.xdg-desktop-portal-gnome
       ];
     };
   };
@@ -152,6 +153,7 @@
     swayidle
     swaylock
     xdg-desktop-portal-hyprland
+    xdg-desktop-portal-gnome
     hyprpaper
     rofi-wayland
     swww

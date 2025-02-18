@@ -19,6 +19,7 @@
     hyprcursor
     upower
     ungoogled-chromium
+    nitch
   ];
 }
 

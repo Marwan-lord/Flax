@@ -12,7 +12,7 @@
 }
 
 window#waybar {
-    border-radius: 4px;
+    border-radius: 0px;
     background: @bg;
     color: @fg;
 }
