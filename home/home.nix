@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./shell.nix
+    ./sh.nix
     ./hypr.nix
     ./pkgs.nix
     ./foot.nix
