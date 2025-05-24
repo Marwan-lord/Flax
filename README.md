@@ -1,5 +1,9 @@
+> [!WARNING]
+> Don't use this! it will break because of wrong portal configuration 
+
+
 # 💠  Flax Nix Flake
-Marwan's NixOS flake
+
 
 ## License
 
